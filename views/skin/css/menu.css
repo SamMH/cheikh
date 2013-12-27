@@ -1,0 +1,158 @@
+/*Menu*/
+
+.navbar {
+	margin-bottom: 0 !important;
+}
+.navbar .container {
+    padding: 0 !important;
+}
+/*
+.navbar .container-menu{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}*/
+
+.navbar-home{margin-top: -50px; }
+
+.navbar .container-menu .nav li a{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 10px 10px;
+}
+
+.navbar-nav{
+	float: none !important;
+	text-align: center;
+}
+.navbar-nav>li {
+	float: none !important;
+	display: inline-block;
+	margin-left: -3px;
+}
+.navbar-nav li a{
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 2px solid transparent;
+	-webkit-transition: border 100ms linear;
+	-moz-transition: border 100ms linear;
+	-ms-transition: border 100ms linear;
+	-o-transition: border 100ms linear;
+	transition: border 100ms linear;
+}
+.navbar-nav li:first-child a{ border-left-color: transparent !important; }
+.navbar-nav li:last-child a{ border-right-color: transparent !important; }
+.navbar-nav > .active {
+	margin-left: -3.5px;
+}
+.navbar-nav > .active > a, 
+.navbar-nav a:hover, 
+.navbar-nav > .active > a:hover, 
+.navbar-nav > .active > a:focus {
+	background-color: transparent !important;
+	background-image: none;
+	box-shadow: none;
+	color: #111 !important;
+	border-bottom: 1px solid #cc0000;
+}
+
+
+
+/*Resaux*/
+.sociaux {
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+}
+.sociaux li{
+	display: inline-block;
+	margin: 1px 5px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	font-size: 2.2em;
+}
+.sociaux li a,
+.sociaux li a span{
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 1px 0 rgba(0,0,0,.15);
+	text-shadow: 0px 1px 0px #ffffff;
+}
+.sociaux li a:hover{
+	opacity: 0.7;
+} 
+
+
+.sociaux li.fbk a{background: url('../img/fbk.png') center no-repeat;}
+.sociaux li.twt a{background: url('../img/twt.png') center no-repeat;}
+.sociaux li.ins a{background: url('../img/ins.png') center no-repeat;}
+.sociaux li.ytb a{background: url('../img/ytb.png') center no-repeat;}
+.sociaux li.via a{background: url('../img/via.png') center no-repeat;}
+.sociaux li.lin a{background: url('../img/lin.png') center no-repeat;}
+.sociaux li.ggl a{background: url('../img/ggl.png') center no-repeat;}
+
+.sociaux li.fbk a,
+.sociaux li.twt a,
+.sociaux li.ins a,
+.sociaux li.ytb a,
+.sociaux li.via a,
+.sociaux li.lin a,
+.sociaux li.ggl a{
+	display: block;
+	-webkit-background-size: cover; /* pour Chrome et Safari */
+	-moz-background-size: cover; /* pour Firefox */
+	-o-background-size: cover; /* pour Opera */
+	background-size: cover; /* version standardisée */
+	padding: 13px;
+	border-radius: 50%;
+	-webkit-transition: all .3s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+}
+
+ @media(min-width:768px) and (max-width:979px) {
+	 body{
+		 /*background-color: green;*/
+	 }
+	 .sociaux{
+		 margin-top: 0px;
+		 position: absolute;
+		 right: 30px;
+		 top: 2px;
+	 }
+	 .my-sidenav{
+		 position: absolute;
+		 right: 0;
+		 top: 15px;
+	 }
+ }
+
+  @media(max-width:767px) { }
+
+
+/* Custom button
+-------------------------------------------------- */
+
+/* Override base .btn styles */
+/* Apply text and background changes to three key states: default, hover, and active (click). */
+.btn-ttc,
+.btn-ttc:hover,
+.btn-ttc:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #007da7;
+}
+
+/* Apply the custom-colored gradients */
+/* Note: you'll need to include all the appropriate gradients for various browsers and standards. */
+.btn-ttc {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+  ...
+}
+
+/* Set the hover state */
+/* An easy hover state is just to move the gradient up a small amount. Add other embellishments as you see fit. */
+.btn-ttc:hover {
+  background-position: 0 -15px;
+}
